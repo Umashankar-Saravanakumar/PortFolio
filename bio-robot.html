@@ -105,18 +105,13 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar scrolled" id="navbar">
-        <div class="nav-content">
-            <a href="index.html" class="logo">U.S.</a>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#education">Education</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Simple Top Navigation -->
+    <div style="position: absolute; top: 2rem; left: 2rem; z-index: 100;">
+        <a href="index.html#projects" class="back-link"
+            style="margin-top: 0; font-size: 1.1rem; background: rgba(0,0,0,0.5); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #333; backdrop-filter: blur(10px);">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+    </div>
 
     <!-- Project specific content -->
     <main>
@@ -241,10 +236,6 @@
                             modules</li>
                     </ul>
                 </div>
-
-                <a href="index.html#projects" class="back-link">
-                    <i class="fas fa-arrow-left"></i> Back to Projects
-                </a>
             </div>
         </section>
     </main>
