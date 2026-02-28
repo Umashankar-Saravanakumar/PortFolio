@@ -100,6 +100,21 @@
             justify-content: center;
             margin-top: 2rem;
         }
+
+        .content-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+
+        @media (max-width: 800px) {
+            .content-split {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
     </style>
 </head>
 
@@ -158,72 +173,74 @@
                     </ul>
 
                     <h3>3. Mechanical Design</h3>
-                    <p>The robot was designed as a dual-module worm-inspired system with an articulated universal joint
-                        at the center.</p>
-                    <p>I engineered:</p>
-                    <ul
-                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">A custom geared articulated joint</li>
-                        <li style="margin-bottom: 0.5rem;">A bending mechanism capable of 90° turns</li>
-                        <li style="margin-bottom: 0.5rem;">Wheg-based traction extrusions to grip grooved pipe interiors
-                        </li>
-                    </ul>
-
-                    <div class="project-gallery">
-                        <img src="images/Sub/Screenshot 2026-02-28 134253.png" alt="CAD model of gear mechanism"
-                            style="height: 100%; object-fit: cover;">
-                        <img src="images/Sub/IMG_1813.JPG" alt="Robot inside 90° bend">
+                    <div class="content-split">
+                        <div>
+                            <p>The robot was designed as a dual-module worm-inspired system with an articulated
+                                universal joint
+                                at the center. I engineered a custom geared articulated joint, a bending mechanism
+                                capable of 90° turns,
+                                and wheg-based traction extrusions to grip grooved pipe interiors.</p>
+                            <p>The geared joint allowed adaptive bending while maintaining structural stability inside
+                                curved
+                                pipe sections.</p>
+                        </div>
+                        <div class="project-gallery" style="margin: 0;">
+                            <img src="images/Sub/Screenshot 2026-02-28 134253.png" alt="CAD model of gear mechanism"
+                                style="height: 100%; object-fit: cover;">
+                            <img src="images/Sub/IMG_1813.JPG" alt="Robot inside 90° bend">
+                        </div>
                     </div>
-                    <p>The geared joint allowed adaptive bending while maintaining structural stability inside curved
-                        pipe sections.</p>
 
                     <h3>4. Locomotion Strategy – CPG-Based Synchronization</h3>
-                    <p>To achieve coordinated motion inside confined geometry, I implemented a Central Pattern Generator
-                        (CPG)-inspired synchronization between the front and rear modules.</p>
-                    <p>This enabled:</p>
-                    <ul
-                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">Phase-shifted rhythmic motion</li>
-                        <li style="margin-bottom: 0.5rem;">Stable propulsion in constrained environments</li>
-                        <li style="margin-bottom: 0.5rem;">Continuous traction during bending</li>
-                    </ul>
-
-                    <div style="text-align: center; margin: 3rem 0;">
-                        <img src="images/Sub/inch_worm_CPG_2.png" alt="Locomotion sequence"
-                            style="max-width: 100%; width: 600px; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);">
+                    <div class="content-split">
+                        <div>
+                            <p>To achieve coordinated motion inside confined geometry, I implemented a Central Pattern
+                                Generator
+                                (CPG)-inspired synchronization between the front and rear modules. This enabled
+                                phase-shifted rhythmic motion,
+                                stable propulsion in constrained environments, and continuous traction during bending.
+                            </p>
+                        </div>
+                        <div style="text-align: center; margin: 0;">
+                            <img src="images/Sub/inch_worm_CPG_2.png" alt="Locomotion sequence"
+                                style="max-width: 100%; width: 100%; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: var(--glass-shadow);">
+                        </div>
                     </div>
 
                     <h3>5. Sensing & Mapping</h3>
-                    <p>The system integrates:</p>
-                    <ul
-                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">SCD30 CO₂ sensor for environmental monitoring</li>
-                        <li style="margin-bottom: 0.5rem;">Raspberry Pi (compact form factor) for onboard processing
-                        </li>
-                        <li style="margin-bottom: 0.5rem;">Live data transmission</li>
-                        <li style="margin-bottom: 0.5rem;">Camera-based 3D reconstruction for internal pipe mapping</li>
-                    </ul>
-                    <p>The 3D reconstruction pipeline estimated pipe curvature and bend angle to assist navigation
-                        decisions.</p>
-
-                    <div class="project-gallery">
-                        <img src="images/Sub/co2_forward.png" alt="CO2 Sensor Forward">
-                        <img src="images/Sub/co2_backward.png" alt="Live CO2 Data Backward">
+                    <div class="content-split">
+                        <div>
+                            <p>The system integrates an SCD30 CO₂ sensor for environmental monitoring, a Raspberry Pi
+                                (compact form factor)
+                                for onboard processing, live data transmission, and camera-based 3D reconstruction for
+                                internal pipe mapping.
+                                The 3D reconstruction pipeline estimated pipe curvature and bend angle to assist
+                                navigation
+                                decisions.</p>
+                        </div>
+                        <div class="project-gallery" style="margin: 0;">
+                            <img src="images/Sub/co2_forward.png" alt="CO2 Sensor Forward">
+                            <img src="images/Sub/co2_backward.png" alt="Live CO2 Data Backward">
+                        </div>
                     </div>
 
                     <h3>6. Experimental Validation</h3>
-                    <p>The robot was physically tested in grooved underground pipe structures.</p>
-                    <p>Results:</p>
-                    <ul
-                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.5rem;">Successfully navigated 90° bends</li>
-                        <li style="margin-bottom: 0.5rem;">Traversed more than 20 meters</li>
-                        <li style="margin-bottom: 0.5rem;">Collected stable real-time CO₂ data</li>
-                        <li style="margin-bottom: 0.5rem;">Validated mechanical adaptability in curved sections</li>
-                    </ul>
-
-                    <div class="project-gallery">
-                        <img src="images/Sub/t_turn.png" alt="T-Turn testing setup">
+                    <div class="content-split">
+                        <div>
+                            <p>The robot was physically tested in grooved underground pipe structures.</p>
+                            <p>Results:</p>
+                            <ul
+                                style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
+                                <li style="margin-bottom: 0.5rem;">Successfully navigated 90° bends</li>
+                                <li style="margin-bottom: 0.5rem;">Traversed more than 20 meters</li>
+                                <li style="margin-bottom: 0.5rem;">Collected stable real-time CO₂ data</li>
+                                <li style="margin-bottom: 0.5rem;">Validated mechanical adaptability in curved sections
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="project-gallery" style="margin: 0;">
+                            <img src="images/Sub/t_turn.png" alt="T-Turn testing setup">
+                        </div>
                     </div>
 
                     <h3>7. My Contributions</h3>
