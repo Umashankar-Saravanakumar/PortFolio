@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umashankar S | Robotics Engineer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">U.S.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h3 class="greeting">Hello, I'm</h3>
+            <h1 class="name">Umashankar S</h1>
+            <h2 class="title">Robotics & Automation Engineer</h2>
+            <p class="summary">
+                Highly motivated and research-driven Robotics Engineer with strong interest in miniature robotics and
+                soft robotic systems. Experienced in developing intelligent robotic platforms using ROS, robot
+                kinematics, dynamics, and control systems. Focused on building scalable, adaptive, and bio-inspired
+                robotic systems.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#education" class="btn btn-secondary">My Education</a>
+            </div>
+            <div class="social-links">
+                <a href="mailto:umashankar20000@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:9789052767" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="hero-background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section bg-alt">
+        <div class="container reveal">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="edu-card glass-panel">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Masters in Engineering Technology<br>(Robotics & Automation)</h3>
+                    <h4>Purdue University, West Lafayette, IN</h4>
+                    <span class="edu-year">Jan 2023 - May 2025</span>
+                </div>
+                <div class="edu-card glass-panel">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h3>Bachelors of Engineering<br>(Robotics & Automation)</h3>
+                    <h4>PSG College of Technology, Coimbatore, India</h4>
+                    <span class="edu-year">Aug 2018 - May 2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Skilled In</h2>
+            <div class="skills-container">
+                <div class="skill-category glass-panel">
+                    <h3>Robotics & Control</h3>
+                    <div class="skill-tags">
+                        <span class="tag">ROS 2</span>
+                        <span class="tag">Gazebo & RViz</span>
+                        <span class="tag">Kinematics & Dynamics</span>
+                        <span class="tag">Motion Planning</span>
+                        <span class="tag">PID & State-Space Control</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-panel">
+                    <h3>Programming & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">MATLAB / Simulink</span>
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">FEA</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-panel">
+                    <h3>Embedded & Hardware</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Microcontrollers (Arduino, STM32)</span>
+                        <span class="tag">Sensor Integration (IMU, LiDAR)</span>
+                        <span class="tag">Motor Control & Actuators</span>
+                        <span class="tag">Miniature & Soft Robotics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section bg-alt">
+        <div class="container reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-tile glass-panel">
+                    <div class="project-image">
+                        <div class="image-placeholder"><i class="fas fa-wave-square"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bio-Inspired Pipe Crawling Robot</h3>
+                        <p>A compact robot inspired by inchworm locomotion for inspection inside narrow pipelines.</p>
+                        <div class="project-tech">
+                            <span>Embedded Control</span>
+                            <span>Sensors</span>
+                            <span>Compliant Mechanisms</span>
+                        </div>
+                        <button class="project-link btn-toggle" aria-expanded="false" aria-controls="project1-details">
+                            <span class="btn-text">View Details</span> <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                    </div>
+                    <div class="project-details" id="project1-details">
+                        <div class="details-content">
+                            <h4>Project Overview</h4>
+                            <p>Developed a bio-inspired robotic system designed to traverse vertical and horizontal
+                                pipelines efficiently.</p>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Designed compliant gripping mechanisms for stable pipe traversal.</li>
+                                <li>Integrated embedded control and sensor feedback to maintain stability inside
+                                    confined environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-tile glass-panel">
+                    <div class="project-image">
+                        <div class="image-placeholder"><i class="fas fa-laptop-code"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Planar Mobile Robot Modeling</h3>
+                        <p>Simulating navigation and modeling kinematics of a differential-drive robot.</p>
+                        <div class="project-tech">
+                            <span>MATLAB/Simulink</span>
+                            <span>PID Control</span>
+                            <span>Kinematics</span>
+                        </div>
+                        <button class="project-link btn-toggle" aria-expanded="false" aria-controls="project2-details">
+                            <span class="btn-text">View Details</span> <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                    </div>
+                    <div class="project-details" id="project2-details">
+                        <div class="details-content">
+                            <h4>Project Overview</h4>
+                            <p>Implemented a point-to-point navigation algorithm using state-space equations for a
+                                planar mobile robot.</p>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Simulated robot motion in MATLAB/Simulink using state-space equations.</li>
+                                <li>Designed and tuned a PID controller in Simulink to minimize positional error.</li>
+                                <li>Analyzed system response using Simulink Scope blocks to evaluate settling time.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-tile glass-panel">
+                    <div class="project-image">
+                        <div class="image-placeholder"><i class="fas fa-cube"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Rubik’s Cube Solver Robot</h3>
+                        <p>A 4-armed robotic system capable of solving a scrambled Rubik’s Cube autonomously.</p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>Motor Control</span>
+                            <span>Web Interface</span>
+                        </div>
+                        <button class="project-link btn-toggle" aria-expanded="false" aria-controls="project3-details">
+                            <span class="btn-text">View Details</span> <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                    </div>
+                    <div class="project-details" id="project3-details">
+                        <div class="details-content">
+                            <h4>Project Overview</h4>
+                            <p>Integrated mechanical design with embedded control for accurate cube manipulation via
+                                precise servo movements.</p>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Developed a web interface to manually input cube states and generate solutions.</li>
+                                <li>Programmed an Arduino to execute predefined motor actuation sequences.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-tile glass-panel">
+                    <div class="project-image">
+                        <div class="image-placeholder"><i class="fas fa-water"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bio-Inspired Buoyancy Robot</h3>
+                        <p>An underwater robotic platform for monitoring shrimp activity in aquaculture ponds.</p>
+                        <div class="project-tech">
+                            <span>Raspberry Pi</span>
+                            <span>MATLAB</span>
+                            <span>Dual-ballast System</span>
+                        </div>
+                        <button class="project-link btn-toggle" aria-expanded="false" aria-controls="project4-details">
+                            <span class="btn-text">View Details</span> <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                    </div>
+                    <div class="project-details" id="project4-details">
+                        <div class="details-content">
+                            <h4>Project Overview</h4>
+                            <p>Engineered an advanced underwater vessel leveraging natural buoyancy forces to conserve
+                                energy.</p>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Designed a zero-power ascent mechanism and a dual-ballast system for depth
+                                    regulation.</li>
+                                <li>Modeled and simulated buoyancy response using MATLAB/Simulink.</li>
+                                <li>Integrated a Raspberry Pi-based control system for sensor interfacing and real-time
+                                    coordination.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-tile glass-panel">
+                    <div class="project-image">
+                        <div class="image-placeholder"><i class="fas fa-plane"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tendon-Driven Soft Gripper</h3>
+                        <p>A lightweight four-finger tendon-driven soft gripper for aerial grasping using quadcopters.
+                        </p>
+                        <div class="project-tech">
+                            <span>Soft Robotics</span>
+                            <span>Tendon-Driven</span>
+                            <span>Servo Actuation</span>
+                        </div>
+                        <button class="project-link btn-toggle" aria-expanded="false" aria-controls="project5-details">
+                            <span class="btn-text">View Details</span> <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                    </div>
+                    <div class="project-details" id="project5-details">
+                        <div class="details-content">
+                            <h4>Project Overview</h4>
+                            <p>Developed an advanced quadcopter gripper utilizing flexible materials for enclosure-style
+                                payload gripping.</p>
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li>Engineered a cable-tendon routing mechanism to achieve synchronized servo actuation.
+                                </li>
+                                <li>Synthesized and tested a custom flexible material optimized for elasticity.</li>
+                                <li>Integrated with onboard electronics to ensure reliable grasping under payload and
+                                    vibration constraints.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer highlight-border">
+        <div class="footer-content">
+            <h2 class="footer-logo">Umashankar S.</h2>
+            <p>Robotics & Automation Engineer | Ready for new opportunities in advanced autonomous systems.</p>
+            <div class="footer-socials">
+                <a href="mailto:umashankar20000@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:9789052767" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Umashankar S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
