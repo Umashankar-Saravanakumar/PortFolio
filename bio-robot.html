@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Inspired Subterranean Robot | Umashankar S</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-hero {
+            padding: 10rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+
+        .project-hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-content {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .project-main-image {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .project-description h3 {
+            font-size: 1.8rem;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .project-description p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .tags-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">U.S.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project specific content -->
+    <main>
+        <section class="project-hero bg-alt">
+            <div class="container">
+                <h1>Bio-Inspired Subterranean Robot</h1>
+                <p>Designed and developed a worm-inspired subterranean robot to measure underground CO₂ concentration in
+                    agricultural pipe networks.</p>
+
+                <div class="tags-container">
+                    <span class="tag">Mechanical Design</span>
+                    <span class="tag">Sensors & Locomotion</span>
+                    <span class="tag">CPG-Based Control</span>
+                    <span class="tag">3D Reconstruction</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content section">
+            <div class="container">
+
+                <div class="project-description">
+                    <h3>1. Overview</h3>
+                    <p>Designed and developed a worm-inspired subterranean robot to measure underground CO₂
+                        concentration in agricultural pipe networks, enabling environmental analysis to study its
+                        potential effect on crop yield.</p>
+                    <p>The system integrates articulated locomotion, live environmental sensing, and vision-based 3D
+                        reconstruction for subsurface mapping.</p>
+
+                    <img src="images/Sub/IMG_1599.JPG" alt="Full robot view" class="project-main-image"
+                        style="margin-top: 2rem;">
+
+                    <h3>2. Problem Statement</h3>
+                    <p>Underground agricultural pipelines are narrow, grooved, and include sharp bends. Traditional
+                        inspection systems cannot navigate these constrained geometries while collecting environmental
+                        data.</p>
+                    <p>The objective was to:</p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-muted); margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">Traverse narrow underground pipes</li>
+                        <li style="margin-bottom: 0.5rem;">Handle bends up to 90°</li>
+                        <li style="margin-bottom: 0.5rem;">Collect real-time CO₂ data</li>
+                        <li style="margin-bottom: 0.5rem;">Reconstruct internal pipe geometry</li>
+                    </ul>
+
+                    <h3>3. Mechanical Design</h3>
+                    <p>The robot was designed as a dual-module worm-inspired system with an articulated universal joint
+                        at the center.</p>
+                    <p>I engineered:</p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-muted); margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">A custom geared articulated joint</li>
+                        <li style="margin-bottom: 0.5rem;">A bending mechanism capable of 90° turns</li>
+                        <li style="margin-bottom: 0.5rem;">Wheg-based traction extrusions to grip grooved pipe interiors
+                        </li>
+                    </ul>
+
+                    <div class="project-gallery">
+                        <img src="images/Sub/IMG_1600 1.jpg" alt="Close-up of articulated joint">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [INSERT IMAGE HERE – CAD model of gear mechanism]</div>
+                    </div>
+                    <p>The geared joint allowed adaptive bending while maintaining structural stability inside curved
+                        pipe sections.</p>
+
+                    <h3>4. Locomotion Strategy – CPG-Based Synchronization</h3>
+                    <p>To achieve coordinated motion inside confined geometry, I implemented a Central Pattern Generator
+                        (CPG)-inspired synchronization between the front and rear modules.</p>
+                    <p>This enabled:</p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-muted); margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">Phase-shifted rhythmic motion</li>
+                        <li style="margin-bottom: 0.5rem;">Stable propulsion in constrained environments</li>
+                        <li style="margin-bottom: 0.5rem;">Continuous traction during bending</li>
+                    </ul>
+
+                    <div class="project-gallery">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [INSERT IMAGE HERE – Locomotion sequence or frames]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [INSERT VIDEO HERE – Movement demo]</div>
+                    </div>
+
+                    <h3>5. Sensing & Mapping</h3>
+                    <p>The system integrates:</p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-muted); margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">SCD30 CO₂ sensor for environmental monitoring</li>
+                        <li style="margin-bottom: 0.5rem;">Raspberry Pi (compact form factor) for onboard processing
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">Live data transmission</li>
+                        <li style="margin-bottom: 0.5rem;">Camera-based 3D reconstruction for internal pipe mapping</li>
+                    </ul>
+                    <p>The 3D reconstruction pipeline estimated pipe curvature and bend angle to assist navigation
+                        decisions.</p>
+
+                    <div class="project-gallery">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [CO₂ sensor integration]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Raspberry Pi mounting]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Screenshot of live CO₂ data]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [3D reconstruction output]</div>
+                    </div>
+
+                    <h3>6. Experimental Validation</h3>
+                    <p>The robot was physically tested in grooved underground pipe structures.</p>
+                    <p>Results:</p>
+                    <ul
+                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-muted); margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">Successfully navigated 90° bends</li>
+                        <li style="margin-bottom: 0.5rem;">Traversed more than 20 meters</li>
+                        <li style="margin-bottom: 0.5rem;">Collected stable real-time CO₂ data</li>
+                        <li style="margin-bottom: 0.5rem;">Validated mechanical adaptability in curved sections</li>
+                    </ul>
+
+                    <div class="project-gallery">
+                        <img src="images/Sub/IMG_1813.JPG" alt="Robot inside 90° bend">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Testing setup]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Field/demo photos]</div>
+                    </div>
+
+                    <h3>7. My Contributions</h3>
+                    <ul
+                        style="list-style-type: disc; padding-left: 2rem; color: var(--text-muted); margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem;">Designed articulated universal joint mechanism</li>
+                        <li style="margin-bottom: 0.5rem;">Developed custom gear transmission system</li>
+                        <li style="margin-bottom: 0.5rem;">Engineered synchronized CPG-based locomotion</li>
+                        <li style="margin-bottom: 0.5rem;">Integrated mechanical coordination between front and rear
+                            modules</li>
+                    </ul>
+                </div>
+
+                <a href="index.html#projects" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer highlight-border">
+        <div class="footer-content">
+            <h2 class="footer-logo">Umashankar S.</h2>
+            <p>Robotics & Automation Engineer | Ready for new opportunities in advanced autonomous systems.</p>
+            <div class="footer-socials">
+                <a href="mailto:umashankar20000@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919789052767" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/usaravan/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Umashankar S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
