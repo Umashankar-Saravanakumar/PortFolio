@@ -253,6 +253,22 @@ img {
     padding-top: 5rem;
 }
 
+.hero-img-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--accent-primary);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .greeting {
     font-size: 1.2rem;
     color: var(--accent-primary);
@@ -553,6 +569,17 @@ img {
     font-size: 4rem;
     color: rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-tile:hover .project-img {
+    transform: scale(1.05);
 }
 
 .project-tile:hover .image-placeholder {
