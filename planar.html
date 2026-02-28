@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planar Mobile Robot | Umashankar S</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-hero {
+            padding: 10rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+
+        .project-hero p {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-content {
+            padding: 4rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .project-main-image {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .project-description h3 {
+            font-size: 1.8rem;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .project-description p {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .tags-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .content-split {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .content-split>div {
+            flex: 1;
+        }
+
+        .content-split.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .split-images {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .split-images.row-layout {
+            flex-direction: row;
+        }
+
+        .split-images img {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .split-images img:hover {
+            transform: scale(1.02);
+            border-color: #555;
+        }
+
+        @media (max-width: 900px) {
+
+            .content-split,
+            .content-split.reverse {
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simple Top Navigation -->
+    <div style="position: absolute; top: 2rem; left: 2rem; z-index: 100;">
+        <a href="index.html#projects" class="back-link"
+            style="margin-top: 0; font-size: 1.1rem; background: rgba(0,0,0,0.5); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #333; backdrop-filter: blur(10px);">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+    </div>
+
+    <!-- Project specific content -->
+    <main>
+        <section class="project-hero bg-alt">
+            <div class="container">
+                <h1>Planar Mobile Robot Interface</h1>
+                <p>Designed and developed a tethered robot graphical user interface (GUI) to control and monitor
+                    real-time robot operations.</p>
+
+                <div class="tags-container">
+                    <span class="tag">GUI Development</span>
+                    <span class="tag">Real-Time Control</span>
+                    <span class="tag">Sensor Integration</span>
+                    <span class="tag">Architecture Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content section">
+            <div class="container">
+
+                <div class="content-split">
+                    <div>
+                        <h3>1. Overview</h3>
+                        <p>Designed and developed a tethered robot graphical user interface (GUI) to control and monitor
+                            real-time robot operations, enabling precise navigation, live sensor feedback, and intuitive
+                            visualization of robot status.</p>
+                        <p>The system integrates real-time control, synchronized communication with the robot, and
+                            visualization of sensor data to support debugging, monitoring, and user-friendly operation.
+                        </p>
+
+                        <h3 style="margin-top: 2.5rem;">2. Problem Statement</h3>
+                        <p>Controlling and monitoring a tethered robot in real-time is challenging due to communication
+                            delays, complex robot actions, and the need for live visualization. Existing interfaces
+                            lacked synchronized control with sensor feedback and clear visual representation.</p>
+                        <p>The objective was to:</p>
+                        <ul
+                            style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
+                            <li style="margin-bottom: 0.5rem;">Provide real-time robot movement control</li>
+                            <li style="margin-bottom: 0.5rem;">Visualize live sensor data</li>
+                            <li style="margin-bottom: 0.5rem;">Ensure reliable and responsive communication</li>
+                            <li style="margin-bottom: 0.5rem;">Offer a user-friendly GUI for monitoring and debugging
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Full GUI overview]</div>
+                    </div>
+                </div>
+
+                <div class="content-split reverse">
+                    <div>
+                        <h3>3. GUI Design</h3>
+                        <p>The interface was designed with intuitive layout and responsive controls. I developed panels
+                            for movement commands, live sensor visualization, and status indicators. Communication
+                            protocols were implemented to ensure reliable command transmission and feedback reception
+                            from the robot.</p>
+                        <p>The GUI architecture allowed modular expansion, accommodating additional sensors and robot
+                            functions without redesign.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: GUI layout design]</div>
+                    </div>
+                </div>
+
+                <div class="content-split">
+                    <div>
+                        <h3>4. Control & Synchronization</h3>
+                        <p>To maintain precise robot control, I implemented synchronized command handling and real-time
+                            feedback display. User commands triggered coordinated actions in the robot, while sensor
+                            data and robot state were updated in the GUI without noticeable delay.</p>
+                        <p>This design ensured smooth operation and reduced the risk of misalignment between user
+                            commands and robot movements.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Command & feedback visualization]</div>
+                    </div>
+                </div>
+
+                <div class="content-split reverse">
+                    <div>
+                        <h3>5. Sensor Integration & Visualization</h3>
+                        <p>The system integrated CO₂ and environmental sensors onboard the robot, transmitting data to
+                            the GUI. Real-time plots and logs were displayed for monitoring purposes, and historical
+                            data could be stored for post-analysis.</p>
+                        <p>Visual indicators were developed to show sensor status, warnings, and alerts, enabling rapid
+                            decision-making during operation.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Live sensor data visualization]</div>
+                    </div>
+                </div>
+
+                <div class="content-split">
+                    <div>
+                        <h3>6. Software Architecture</h3>
+                        <p>The GUI was built using a modular framework, with separate threads for command sending, data
+                            reception, and interface updates. This separation minimized latency, improved
+                            responsiveness, and allowed easy debugging of individual components.</p>
+                        <p>Communication with the robot used a tethered wired protocol to ensure reliable data transfer
+                            even in environments with interference.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Software architecture diagram]</div>
+                    </div>
+                </div>
+
+                <div class="content-split reverse">
+                    <div>
+                        <h3>7. Experimental Validation</h3>
+                        <p>The GUI was tested with the tethered robot in controlled environments. Tests confirmed
+                            responsive movement control, accurate sensor display, and stable data logging. Users were
+                            able to operate the robot effectively while monitoring environmental feedback and movement
+                            status in real-time.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;margin-bottom:1rem;">
+                            [Image Placeholder: Robot controlled via GUI in test environment]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Sensor data logs during operation]</div>
+                    </div>
+                </div>
+
+                <h3>8. My Contributions</h3>
+                <ul style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
+                    <li style="margin-bottom: 0.5rem;">Designed and implemented the real-time control GUI</li>
+                    <li style="margin-bottom: 0.5rem;">Developed synchronized command and feedback handling</li>
+                    <li style="margin-bottom: 0.5rem;">Integrated live sensor visualization and logging</li>
+                    <li style="margin-bottom: 0.5rem;">Architected a modular, extensible GUI framework</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer highlight-border">
+        <div class="footer-content">
+            <h2 class="footer-logo">Umashankar S.</h2>
+            <p>Robotics & Automation Engineer | Ready for new opportunities in advanced autonomous systems.</p>
+            <div class="footer-socials">
+                <a href="mailto:umashankar20000@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919789052767" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/usaravan/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Umashankar S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
