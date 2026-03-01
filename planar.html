@@ -173,7 +173,7 @@
                     <span class="tag">Kinematic Modeling</span>
                     <span class="tag">Autonomous Navigation</span>
                     <span class="tag">Control Systems</span>
-                    <span class="tag">Hardware Integration</span>
+                    <span class="tag">Matlab to Hardware Integration</span>
                 </div>
             </div>
         </section>
@@ -204,14 +204,10 @@
                                 navigation</li>
                             <li style="margin-bottom: 0.5rem;">Translate simulated math models to control a real
                                 physical robot</li>
-                            <li style="margin-bottom: 0.5rem;">Ensure accurate trajectory execution to user-defined
-                                coordinates</li>
                         </ul>
                     </div>
                     <div class="split-images">
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
-                            [Image Placeholder: Physical robot navigating to target]</div>
+                        <img src="images/mobile_robot/mobile_robot_1.png" alt="Development of Autonomous Navigation Algorithm using Simulink Environment">
                     </div>
                 </div>
 
@@ -225,9 +221,7 @@
                             autonomous control design.</p>
                     </div>
                     <div class="split-images">
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
-                            [Image Placeholder: Kinematic math model diagrams]</div>
+                        <img src="images/mobile_robot/kinematic_modeling.png" alt="Kinematic Model for Differential">
                     </div>
                 </div>
 
@@ -238,49 +232,15 @@
                             closed-loop control strategy. The custom controller continuously calculates the required
                             linear and angular velocities based on the error between the robot's real-time pose and the
                             target destination.</p>
-                        <p>This architecture ensures smooth path execution and actively corrects for physical drift and
-                            wheel slip during movement.</p>
                     </div>
                     <div class="split-images">
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
-                            [Image Placeholder: Control loop architecture]</div>
+                        <img src="images/mobile_robot/autonomous_mode.png" alt="Autonomous Navigation">
                     </div>
                 </div>
 
                 <div class="content-split reverse">
-                    <div>
-                        <h3>5. Physical Hardware Integration</h3>
-                        <p>The developed control algorithms were deployed directly onto a real, physical planar mobile
-                            robot. The integration process involved meticulously bridging the high-level control outputs
-                            with the low-level hardware motor controllers.</p>
-                        <p>This ensured that the theoretically calculated wheel velocities were accurately translated
-                            into physical motor commands, dynamically adapting to real-world friction and inertia.</p>
-                    </div>
-                    <div class="split-images">
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
-                            [Image Placeholder: Physical robot hardware integration]</div>
-                    </div>
-                </div>
-
-                <div class="content-split">
-                    <div>
-                        <h3>6. System Architecture</h3>
-                        <p>The architecture was designed to seamlessly bridge the gap between user inputs, the kinematic
-                            controller, and the physical hardware. It handles real-time state estimation, precisely
-                            computes the control laws, and safely transmits velocity commands to the actuators.</p>
-                    </div>
-                    <div class="split-images">
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
-                            [Image Placeholder: System architecture flow diagram]</div>
-                    </div>
-                </div>
-
-                <div class="content-split reverse">
-                    <div>
-                        <h3>7. Experimental Validation</h3>
+                     <div>
+                        <h3>6. Experimental Validation</h3>
                         <p>The navigation system was extensively tested on the physical robot. Experiments involved
                             providing various user-selected target points across different distances, angles, and
                             real-world floor surfaces.</p>
@@ -289,16 +249,26 @@
                             high precision.</p>
                     </div>
                     <div class="split-images">
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;margin-bottom:1rem;">
-                            [Image Placeholder: Robot successfully reaching selected point]</div>
-                        <div
-                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
-                            [Image Placeholder: Trajectory tracking graphs]</div>
+                        <video 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                            style="
+                                width:100%;
+                                max-height:400px;
+                                object-fit:cover;
+                                border-radius:16px;
+                                border:1px solid var(--glass-border);
+                                box-shadow:var(--glass-shadow);
+                            "
+                        >
+                            <source src="images/mobile_robot/video-clip-mobile-robot-1.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
 
-                <h3>8. My Contributions</h3>
+                <h3>7. My Contributions</h3>
                 <ul style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
                     <li style="margin-bottom: 0.5rem;">Modeled the forward and inverse kinematics for the
                         differential-drive robot</li>

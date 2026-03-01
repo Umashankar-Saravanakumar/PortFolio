@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Robotics Lab | Umashankar S</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-hero {
+            padding: 10rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+
+        .project-hero p {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-content {
+            padding: 4rem 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .project-main-image {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .project-description h3 {
+            font-size: 1.8rem;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .project-description p {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .tags-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .content-split {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .content-split>div {
+            flex: 1;
+        }
+
+        .content-split.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .split-images {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .split-images.row-layout {
+            flex-direction: row;
+        }
+
+        .split-images img {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .split-images img:hover {
+            transform: scale(1.02);
+            border-color: #555;
+        }
+
+        @media (max-width: 900px) {
+
+            .content-split,
+            .content-split.reverse {
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simple Top Navigation -->
+    <div style="position: absolute; top: 2rem; left: 2rem; z-index: 100;">
+        <a href="index.html#experience" class="back-link"
+            style="margin-top: 0; font-size: 1.1rem; background: rgba(0,0,0,0.5); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #333; backdrop-filter: blur(10px);">
+            <i class="fas fa-arrow-left"></i> Back to Experience
+        </a>
+    </div>
+
+    <!-- Experience specific content -->
+    <main>
+        <section class="project-hero bg-alt">
+            <div class="container">
+                <h1>Collaborative Robotics Laboratory, Purdue</h1>
+                <p>Research Assistant; worked on publishing engineered evolution of robotic locomotion.</p>
+
+                <div class="tags-container">
+                    <span class="tag">Research</span>
+                    <span class="tag">Robotic Locomotion</span>
+                    <span class="tag">Publications</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-content section">
+            <div class="container">
+
+                <div class="content-split">
+                    <div>
+                        <h3>1. Overview</h3>
+                        <p>Modeled the kinematics of a differential-drive planar mobile robot and developed a control
+                            system tailored for autonomous navigation. The primary focus was enabling the physical robot
+                            system to accurately and smoothly navigate to any user-selected target point in its
+                            environment.</p>
+                        <p>The project successfully bridged the gap between theoretical mathematical modeling and
+                            real-world physical hardware execution.</p>
+
+                        <h3 style="margin-top: 2.5rem;">2. Problem Statement</h3>
+                        <p>Autonomous navigation of a planar mobile robot requires accurate modeling of its kinematics
+                            and robust control algorithms to handle real-world physical constraints. The core challenge
+                            was translating a simulated model into reliable physical movement.</p>
+                        <p>The objective was to:</p>
+                        <ul
+                            style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
+                            <li style="margin-bottom: 0.5rem;">Formulate the kinematic model of a differential-drive
+                                robot</li>
+                            <li style="margin-bottom: 0.5rem;">Develop closed-loop control algorithms for point-to-point
+                                navigation</li>
+                            <li style="margin-bottom: 0.5rem;">Translate simulated math models to control a real
+                                physical robot</li>
+                            <li style="margin-bottom: 0.5rem;">Ensure accurate trajectory execution to user-defined
+                                coordinates</li>
+                        </ul>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:300px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Physical robot navigating to target]</div>
+                    </div>
+                </div>
+
+                <div class="content-split reverse">
+                    <div>
+                        <h3>3. Kinematic Modeling</h3>
+                        <p>I developed a comprehensive mathematical model representing the non-holonomic constraints of
+                            the differential-drive system. This involved deriving the forward and inverse kinematics to
+                            map individual wheel velocities to the robot's global position and orientation.</p>
+                        <p>This accurate kinematic model formed the rigid foundation required for the subsequent
+                            autonomous control design.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Kinematic math model diagrams]</div>
+                    </div>
+                </div>
+
+                <div class="content-split">
+                    <div>
+                        <h3>4. Control Strategy for Autonomous Navigation</h3>
+                        <p>To achieve reliable autonomous navigation to user-selected points, I implemented a robust
+                            closed-loop control strategy. The custom controller continuously calculates the required
+                            linear and angular velocities based on the error between the robot's real-time pose and the
+                            target destination.</p>
+                        <p>This architecture ensures smooth path execution and actively corrects for physical drift and
+                            wheel slip during movement.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Control loop architecture]</div>
+                    </div>
+                </div>
+
+                <div class="content-split reverse">
+                    <div>
+                        <h3>5. Physical Hardware Integration</h3>
+                        <p>The developed control algorithms were deployed directly onto a real, physical planar mobile
+                            robot. The integration process involved meticulously bridging the high-level control outputs
+                            with the low-level hardware motor controllers.</p>
+                        <p>This ensured that the theoretically calculated wheel velocities were accurately translated
+                            into physical motor commands, dynamically adapting to real-world friction and inertia.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Physical robot hardware integration]</div>
+                    </div>
+                </div>
+
+                <div class="content-split">
+                    <div>
+                        <h3>6. System Architecture</h3>
+                        <p>The architecture was designed to seamlessly bridge the gap between user inputs, the kinematic
+                            controller, and the physical hardware. It handles real-time state estimation, precisely
+                            computes the control laws, and safely transmits velocity commands to the actuators.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: System architecture flow diagram]</div>
+                    </div>
+                </div>
+
+                <div class="content-split reverse">
+                    <div>
+                        <h3>7. Experimental Validation</h3>
+                        <p>The navigation system was extensively tested on the physical robot. Experiments involved
+                            providing various user-selected target points across different distances, angles, and
+                            real-world floor surfaces.</p>
+                        <p>The results successfully validated the accuracy of the kinematic model and the reliability of
+                            the control algorithms, with the robot consistently reaching its designated targets with
+                            high precision.</p>
+                    </div>
+                    <div class="split-images">
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;margin-bottom:1rem;">
+                            [Image Placeholder: Robot successfully reaching selected point]</div>
+                        <div
+                            style="background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#888;height:250px;border-radius:16px;border:1px dashed #333;text-align:center;padding:1rem;">
+                            [Image Placeholder: Trajectory tracking graphs]</div>
+                    </div>
+                </div>
+
+                <h3>8. My Contributions</h3>
+                <ul style="list-style-type: disc; padding-left: 2rem; color: var(--text-main); margin-bottom: 2rem;">
+                    <li style="margin-bottom: 0.5rem;">Modeled the forward and inverse kinematics for the
+                        differential-drive robot</li>
+                    <li style="margin-bottom: 0.5rem;">Developed and tuned closed-loop control algorithms for
+                        point-to-point autonomous navigation</li>
+                    <li style="margin-bottom: 0.5rem;">Bridged theoretical mathematical models to control real-world
+                        physical robot hardware</li>
+                    <li style="margin-bottom: 0.5rem;">Validated autonomous navigation accuracy through extensive
+                        physical testing</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer highlight-border">
+        <div class="footer-content">
+            <h2 class="footer-logo">Umashankar S.</h2>
+            <p>Robotics & Automation Engineer | Ready for new opportunities in advanced autonomous systems.</p>
+            <div class="footer-socials">
+                <a href="mailto:umashankar20000@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+919789052767" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/usaravan/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Umashankar S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
